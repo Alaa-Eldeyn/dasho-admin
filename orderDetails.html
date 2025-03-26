@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orders</title>
+  <!-- Favicon icon -->
+  <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
+  <!-- fontawesome icon -->
+  <link rel="stylesheet" href="assets/fonts/fontawesome/css/fontawesome-all.min.css" />
+  <!-- animation css -->
+  <link rel="stylesheet" href="assets/plugins/animation/css/animate.min.css" />
+  <!-- data tables css -->
+  <link rel="stylesheet" href="assets/plugins/data-tables/css/datatables.min.css" />
+  <!-- Smart Wizard css -->
+  <link rel="stylesheet" href="assets/plugins/smart-wizard/css/smart_wizard.min.css" />
+  <link rel="stylesheet" href="assets/plugins/smart-wizard/css/smart_wizard_theme_arrows.min.css" />
+  <link rel="stylesheet" href="assets/plugins/smart-wizard/css/smart_wizard_theme_circles.min.css" />
+  <link rel="stylesheet" href="assets/plugins/smart-wizard/css/smart_wizard_theme_dots.min.css" />
+  <!-- material icon -->
+  <link
+    rel="stylesheet"
+    href="assets/fonts/material/css/materialdesignicons.min.css"
+  />
+  <!-- vendor css -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- [ navigation menu ] start -->
+  <nav class="pcoded-navbar menupos-fixed">
+    <div class="navbar-wrapper">
+      <div class="navbar-brand header-logo">
+        <a href="index.html" class="b-brand">
+          <img src="assets/images/logo.svg" alt="" class="logo images" />
+          <img src="assets/images/logo-icon.svg" alt="" class="logo-thumb images" />
+        </a>
+        <a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
+      </div>
+      <div class="navbar-content scroll-div">
+        <ul class="nav pcoded-inner-navbar">
+          <li data-username="dashboard" class="nav-item">
+            <a href="dashboard.html" class="nav-link"><span class="pcoded-micon"><i
+                  class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
+          </li>
+          <li data-username="AccountTypes" class="nav-item">
+            <a href="accountTypes.html" class="nav-link"><span class="pcoded-micon"><i
+                  class="fas fa-user"></i></span><span class="pcoded-mtext">Account Types</span></a>
+          </li>
+          <li data-username="Ranks" class="nav-item">
+            <a href="ranks.html" class="nav-link"><span class="pcoded-micon"><i class="fas fa-list-alt"></i></span><span
+                class="pcoded-mtext">Ranks</span></a>
+          </li>
+          <li data-username="Users" class="nav-item pcoded-hasmenu">
+            <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="fas fa-users"></i></span><span
+                class="pcoded-mtext">Users</span></a>
+            <ul class="pcoded-submenu">
+              <li class=""><a href="admins.html" class="">Admins</a></li>
+              <li class="">
+                <a href="marketers.html" class="">Marketers</a>
+              </li>
+              <li class="">
+                <a href="customers.html" class="">Customers</a>
+              </li>
+            </ul>
+          </li>
+          <li data-username="Payments" class="nav-item">
+            <a href="payments.html" class="nav-link"><span class="pcoded-micon"><i
+                  class="fas fa-money-bill-wave"></i></span><span class="pcoded-mtext">Payments</span></a>
+          </li>
+          <li data-username="Orders" class="nav-item">
+            <a href="orders.html" class="nav-link"><span class="pcoded-micon"><i
+                  class="fas fa-dolly-flatbed"></i></span><span class="pcoded-mtext">Orders</span></a>
+          </li>
+          <li data-username="Configurations " class="nav-item pcoded-hasmenu">
+            <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="mdi mdi-folder-multiple-outline"></i></span><span
+                class="pcoded-mtext">Configurations</span></a>
+            <ul class="pcoded-submenu">
+              <li class="">
+                <a href="generalConfiguration.html" class="">General Configuration</a>
+              </li>
+              <li class="">
+                <a href="configurations.html" class="">Configurations</a>
+              </li>
+            </ul>
+          </li>
+          <li data-username="Messages" class="nav-item">
+            <a href="messages.html" class="nav-link"><span class="pcoded-micon"><i
+                  class="fas fa-comments"></i></span><span class="pcoded-mtext">Messages</span></a>
+          </li>
+
+          <li data-username="Settings" class="nav-item">
+            <a href="settings.html" class="nav-link"><span class="pcoded-micon"><i
+                  class="feather icon-settings"></i></span><span class="pcoded-mtext">Settings</span></a>
+          </li>
+          <li data-username="Need Support" class="nav-item">
+            <a href="#!" class="nav-link" target="_blank"><span class="pcoded-micon"><i
+                  class="feather icon-help-circle"></i></span><span class="pcoded-mtext">Need support ?</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- [ navigation menu ] end -->
+
+  <!-- [ Header ] start -->
+  <header class="navbar pcoded-header navbar-expand-lg navbar-light headerpos-fixed headerpos-fixed">
+    <div class="m-header">
+      <a class="mobile-menu" id="mobile-collapse1" href="#!"><span></span></a>
+      <a href="index.html" class="b-brand">
+        <img src="assets/images/logo.svg" alt="" class="logo images" />
+        <img src="assets/images/logo-icon.svg" alt="" class="logo-thumb images" />
+      </a>
+    </div>
+    <a class="mobile-menu" id="mobile-header" href="#!">
+      <i class="feather icon-more-horizontal"></i>
+    </a>
+    <div class="collapse navbar-collapse">
+      <h4 class="ms-3 my-auto">
+        <i class="fas fa-list-alt me-2"></i>Marketers
+      </h4>
+      <a href="#!" class="mob-toggler"></a>
+      <ul class="navbar-nav ms-auto">
+        <li>
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="icon feather icon-bell"></i></a>
+            <div class="dropdown-menu dropdown-menu-end notification">
+              <div class="noti-head">
+                <h6 class="d-inline-block m-b-0">Notifications</h6>
+                <div class="float-end">
+                  <a href="#!" class="m-r-10">mark as read</a>
+                  <a href="#!">clear all</a>
+                </div>
+              </div>
+              <ul class="noti-body">
+                <li class="n-title">
+                  <p class="m-b-0">NEW</p>
+                </li>
+                <li class="notification">
+                  <div class="d-flex">
+                    <img class="img-radius" src="assets/images/user/avatar-1.jpg" alt="Generic placeholder image" />
+                    <div class="flex-grow-1">
+                      <p>
+                        <strong>John Doe</strong><span class="n-time text-muted"><i
+                            class="icon feather icon-clock m-r-10"></i>5
+                          min</span>
+                      </p>
+                      <p>New ticket Added</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="n-title">
+                  <p class="m-b-0">EARLIER</p>
+                </li>
+                <li class="notification">
+                  <div class="d-flex">
+                    <img class="img-radius" src="assets/images/user/avatar-2.jpg" alt="Generic placeholder image" />
+                    <div class="flex-grow-1">
+                      <p>
+                        <strong>Joseph William</strong><span class="n-time text-muted"><i
+                            class="icon feather icon-clock m-r-10"></i>10
+                          min</span>
+                      </p>
+                      <p>Prchace New Theme and make payment</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="notification">
+                  <div class="d-flex">
+                    <img class="img-radius" src="assets/images/user/avatar-3.jpg" alt="Generic placeholder image" />
+                    <div class="flex-grow-1">
+                      <p>
+                        <strong>Sara Soudein</strong><span class="n-time text-muted"><i
+                            class="icon feather icon-clock m-r-10"></i>12
+                          min</span>
+                      </p>
+                      <p>currently login</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="notification">
+                  <div class="d-flex">
+                    <img class="img-radius" src="assets/images/user/avatar-1.jpg" alt="Generic placeholder image" />
+                    <div class="flex-grow-1">
+                      <p>
+                        <strong>Joseph William</strong><span class="n-time text-muted"><i
+                            class="icon feather icon-clock m-r-10"></i>30
+                          min</span>
+                      </p>
+                      <p>Prchace New Theme and make payment</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="notification">
+                  <div class="d-flex">
+                    <img class="img-radius" src="assets/images/user/avatar-3.jpg" alt="Generic placeholder image" />
+                    <div class="flex-grow-1">
+                      <p>
+                        <strong>Sara Soudein</strong><span class="n-time text-muted"><i
+                            class="icon feather icon-clock m-r-10"></i>1
+                          hour</span>
+                      </p>
+                      <p>currently login</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="notification">
+                  <div class="d-flex">
+                    <img class="img-radius" src="assets/images/user/avatar-1.jpg" alt="Generic placeholder image" />
+                    <div class="flex-grow-1">
+                      <p>
+                        <strong>Joseph William</strong><span class="n-time text-muted"><i
+                            class="icon feather icon-clock m-r-10"></i>2
+                          hour</span>
+                      </p>
+                      <p>Prchace New Theme and make payment</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="noti-footer">
+                <a href="#!">show all</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown drp-user">
+            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+              <i class="icon feather icon-settings"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end profile-notification">
+              <div class="pro-head">
+                <img src="assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image" />
+                <span>John Doe</span>
+                <a href="signin.html" class="dud-logout" title="Logout">
+                  <i class="feather icon-log-out"></i>
+                </a>
+              </div>
+              <ul class="pro-body">
+                <li>
+                  <a href="#!" class="dropdown-item"><i class="feather icon-settings"></i> Settings</a>
+                </li>
+                <li>
+                  <a href="#!" class="dropdown-item"><i class="feather icon-user"></i> Profile</a>
+                </li>
+                <li>
+                  <a href="message.html" class="dropdown-item"><i class="feather icon-mail"></i> My Messages</a>
+                </li>
+                <li>
+                  <a href="signin.html" class="dropdown-item text-danger"><i class="feather icon-lock"></i> Log out</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- [ Header ] end -->
+
+  <!-- [ Main Content ] start -->
+  <div class="pcoded-main-container">
+    <div class="pcoded-wrapper">
+      <div class="pcoded-content">
+        <div class="pcoded-inner-content">
+          <div class="main-body">
+            <div class="page-wrapper">
+              <div class="bg-white p-4">
+                <h5>Order Details:</h5>
+                <div class="row g-0">
+                  <div class="col-md-6 mb-3">
+                    <div class="card h-100">
+                      <div class="card-body p-0">
+                        <div class="my-3">
+                          <span class="px-3 d-block"><i class="fas fa-circle text-c-blue f-10 m-r-5"></i><strong
+                              class="fw-bold">Customer Name: </strong>
+                            Alaa Mohamed</span>
+                          <hr />
+                          <span class="px-3 d-block"><i class="fas fa-circle text-c-green f-10 m-r-5"></i><strong
+                              class="fw-bold">Customer Type: </strong>Marketer</span>
+                          <hr />
+                          <span class="px-3 d-block"><i class="fas fa-circle text-c-green f-10 m-r-5"></i><strong
+                              class="fw-bold">Email: </strong>alaa.eldeyn@gmail.com</span>
+                          <hr />
+                          <span class="px-3 d-block"><i class="fas fa-circle text-c-green f-10 m-r-5"></i><strong
+                              class="fw-bold">Price: </strong>200$</span>
+                          <hr />
+                          <span class="px-3 d-block"><i class="fas fa-circle text-c-green f-10 m-r-5"></i><strong
+                              class="fw-bold">Address: </strong>
+                            1234 Main St, New York, NY 10030
+                          </span>
+                          <hr />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="card h-100">
+                      <div class="card-body p-0">
+                        <div class="my-3">
+                          <span class="px-3 d-block"><i class="fas fa-circle text-c-blue f-10 m-r-5"></i><strong
+                              class="fw-bold">Phone Number: </strong>+01010385495</span>
+                          <hr />
+                          <span class="px-3 d-block"><i class="fas fa-circle text-c-green f-10 m-r-5"></i><strong
+                              class="fw-bold">Order Date: </strong>15/7/2003</span>
+                          <hr />
+                          <span class="px-3 d-block"><i class="fas fa-circle text-c-red f-10 m-r-5"></i><strong
+                              class="fw-bold">PVs: </strong>2000</span>
+                          <hr />
+                          <span class="px-3 d-block"><i class="fas fa-circle text-c-red f-10 m-r-5"></i><strong
+                              class="fw-bold">Payment Status: </strong>
+                            <span class="text-danger"> Unpaid</span>
+                          </span>
+                          <hr />
+                          <span class="px-3 d-block"><i class="fas fa-circle text-c-red f-10 m-r-5"></i><strong
+                              class="fw-bold">Payment Method: </strong>Cash</span>
+                          <hr />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h3>Items:</h3>
+                <div class="table-border-style">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>SKU</th>
+                          <th>Image</th>
+                          <th>Item</th>
+                          <th>Quantity</th>
+                          <th>Unit Price</th>
+                          <th>Unit PVs</th>
+                          <th>Sub Total</th>
+                        </tr>
+                      </thead>
+                      <tbody style="color: white">
+                        <tr>
+                          <td>#123456</td>
+                          <td>Image</td>
+                          <td>Item Name</td>
+                          <td>X1</td>
+                          <td>1</td>
+                          <td>1</td>
+                          <td>1</td>
+                        </tr>
+                        <tr>
+                          <td>#123456</td>
+                          <td>Image</td>
+                          <td>Item Name</td>
+                          <td>X1</td>
+                          <td>1</td>
+                          <td>1</td>
+                          <td>1</td>
+                        </tr>
+                        <tr>
+                          <td>#123456</td>
+                          <td>Image</td>
+                          <td>Item Name</td>
+                          <td>X1</td>
+                          <td>1</td>
+                          <td>1</td>
+                          <td>1</td>
+                        </tr>
+                        <tr>
+                          <td>#123456</td>
+                          <td>Image</td>
+                          <td>Item Name</td>
+                          <td>X1</td>
+                          <td>1</td>
+                          <td>1</td>
+                          <td>1</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!-- [ Smart-Wizard ] start -->
+                <div class="col-sm-12">
+                  <div class="card">
+                    <div class="card-header">
+                      <h5>Smart Wizard</h5>
+                    </div>
+                    <div class="card-body">
+                      <select id="theme_selector" class="form-control custom-select col-lg-6 col-sm-12 mb-3">
+                        <option value="default">default</option>
+                        <option value="dots">dots</option>
+                        <option value="arrows">arrows</option>
+                      </select>
+                      <!-- [ SmartWizard html ] start -->
+                      <div id="smartwizard">
+                        <ul class="d-flex justify-content-center align-items-center">
+                          <li class="flex-grow-1 text-center">
+                            <a href="#step-1">
+                              <h6>Step 1</h6>
+                              <p class="m-0">Processing</p>
+                            </a>
+                          </li>
+                          <li class="flex-grow-1 text-center">
+                            <a href="#step-2">
+                              <h6>Step 2</h6>
+                              <p class="m-0">Shipping</p>
+                            </a>
+                          </li>
+                          <li class="flex-grow-1 text-center">
+                            <a href="#step-3">
+                              <h6>Step 3</h6>
+                              <p class="m-0">Delivered</p>
+                            </a>
+                          </li>
+                          <li class="flex-grow-1 text-center">
+                            <a href="#step-4">
+                              <h6>Step 4</h6>
+                              <p class="m-0">Delivered</p>
+                            </a>
+                          </li>
+                        </ul>
+                        <div>
+                          <div id="step-1">
+                            <div class="text-center fw-bold fs-5">New Order</div>
+                            <div class="d-flex justify-content-center align-items-center my-3">
+                              <img src="assets/images/bg-images/1.jpg" alt="Processing"
+                                style="width: 300px; height: 300px;" />
+                            </div>
+                            <div class="d-flex justify-content-center gap-2 align-items-center">
+                              <button class="btn btn-danger">Reject</button>
+                              <button class="btn btn-primary">Accept</button>
+                            </div>
+                          </div>
+                          <div id="step-2">
+                            <div class="text-center fw-bold fs-5">In Progress...</div>
+                            <div class="d-flex justify-content-center align-items-center my-3">
+                              <img src="assets/images/bg-images/2.jpg" alt="Processing"
+                                style="width: 300px; height: 300px;" />
+                            </div>
+                            <div class="d-flex justify-content-between gap-2 align-items-center w-50 mx-auto">
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input input-primary" id="customCheck1">
+                                <label class="form-check-label fw-bold fs-6" for="customCheck1">Paid</label>
+                              </div>
+                              <div>
+                                <label class="form-label" for="exampleFormControlSelect1">Payment Method</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                  <option hidden>Select Method</option>
+                                  <option>InstaPay</option>
+                                  <option>Vodafone Cash</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="step-3">
+                            <div class="text-center fw-bold fs-5">Shipping...</div>
+                            <div class="d-flex justify-content-center align-items-center my-3">
+                              <img src="assets/images/bg-images/3.jpg" alt="Processing" />
+                            </div>
+                            <div class="d-flex justify-content-between gap-2 align-items-center w-50 mx-auto">
+                              <div class="form-check">
+                                <label class="form-label" for="exampleFormControlSelect2">Shipping Company</label>
+                                <select class="form-control" id="exampleFormControlSelect2">
+                                  <option hidden>Select Company</option>
+                                  <option>Bosta</option>
+                                  <option>Amazon</option>
+                                  <option>Aramix</option>
+                                  <option>Fedex</option>
+                                </select>
+                              </div>
+                              <div>
+                                <label for="demo-date-only" class="form-label">Date only</label>
+                                <input class="form-control" type="date" value="2021-12-31" id="demo-date-only">
+                              </div>
+                            </div>
+                          </div>
+                          <div id="step-4">
+                            <div class="text-center fw-bold fs-5">Delivered</div>
+                            <div class="d-flex justify-content-center align-items-center my-3">
+                              <img src="assets/images/bg-images/2.jpg" alt="Processing"
+                                style="width: 300px; height: 300px;" />
+                            </div>
+                            <div class="d-flex justify-content-center gap-2 align-items-center">
+                              <button class="btn btn-primary">Done</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- [ Smart-Wizard ] end -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- [ Main Content ] end -->
+
+  <!-- [ Floating Whatsapp ] start -->
+  <div
+    class="position-fixed bottom-0 end-0 m-4 rounded-pill bg-success text-white d-flex justify-content-center align-center"
+    style="width: 50px; height: 50px; cursor: pointer">
+    <i class="fab fa-whatsapp fs-3 mt-2"></i>
+  </div>
+  <!-- [ Floating Whatsapp ] end -->
+
+  <script src="assets/js/vendor-all.min.js"></script>
+  <script src="assets/plugins/bootstrap/js/popper.min.js"></script>
+  <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/pcoded.min.js"></script>
+
+  <!-- datatable Js -->
+  <script src="assets/plugins/data-tables/js/datatables.min.js"></script>
+  <script src="assets/js/pages/data-basic-custom.js"></script>
+  <!-- Smart Wizard Js -->
+  <script src="assets/plugins/smart-wizard/js/jquery.smartWizard.min.js"></script>
+  <script src="assets/js/pages/wizard-custom.js"></script>
+</body>
+
+</html>

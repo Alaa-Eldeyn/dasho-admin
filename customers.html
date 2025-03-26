@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customers</title>
+    <!-- Favicon icon -->
+    <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
+    <!-- fontawesome icon -->
+    <link
+      rel="stylesheet"
+      href="assets/fonts/fontawesome/css/fontawesome-all.min.css"
+    />
+    <!-- animation css -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/animation/css/animate.min.css"
+    />
+      <!-- data tables css -->
+  <link rel="stylesheet" href="assets/plugins/data-tables/css/datatables.min.css">
+    <!-- vendor css -->
+       <!-- material icon -->
+  <link
+    rel="stylesheet"
+    href="assets/fonts/material/css/materialdesignicons.min.css"
+  />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- [ navigation menu ] start -->
+    <nav class="pcoded-navbar menupos-fixed">
+      <div class="navbar-wrapper">
+        <div class="navbar-brand header-logo">
+          <a href="index.html" class="b-brand">
+            <img src="assets/images/logo.svg" alt="" class="logo images" />
+            <img
+              src="assets/images/logo-icon.svg"
+              alt=""
+              class="logo-thumb images"
+            />
+          </a>
+          <a class="mobile-menu" id="mobile-collapse" href="#!"
+            ><span></span
+          ></a>
+        </div>
+        <div class="navbar-content scroll-div">
+          <ul class="nav pcoded-inner-navbar">
+            <li data-username="dashboard" class="nav-item">
+              <a href="dashboard.html" class="nav-link"
+                ><span class="pcoded-micon"
+                  ><i class="feather icon-home"></i></span
+                ><span class="pcoded-mtext">Dashboard</span></a
+              >
+            </li>
+            <li data-username="AccountTypes" class="nav-item">
+              <a href="accountTypes.html" class="nav-link"
+                ><span class="pcoded-micon"><i class="fas fa-user"></i></span
+                ><span class="pcoded-mtext">Account Types</span></a
+              >
+            </li>
+            <li data-username="Ranks" class="nav-item">
+              <a href="ranks.html" class="nav-link"
+                ><span class="pcoded-micon"
+                  ><i class="fas fa-list-alt"></i></span
+                ><span class="pcoded-mtext">Ranks</span></a
+              >
+            </li>
+            <li data-username="Users" class="nav-item pcoded-hasmenu">
+              <a href="#!" class="nav-link"
+                ><span class="pcoded-micon"
+                  ><i class="fas fa-users"></i></span
+                ><span class="pcoded-mtext">Users</span></a
+              >
+              <ul class="pcoded-submenu">
+                <li class=""><a href="admins.html" class="">Admins</a></li>
+                <li class="">
+                  <a href="marketers.html" class="">Marketers</a>
+                </li>
+                <li class="">
+                  <a href="customers.html" class="">Customers</a>
+                </li>
+              </ul>
+            </li>
+            <li data-username="Payments" class="nav-item">
+              <a href="payments.html" class="nav-link"
+                ><span class="pcoded-micon"
+                  ><i class="fas fa-money-bill-wave"></i></span
+                ><span class="pcoded-mtext">Payments</span></a
+              >
+            </li>
+            <li data-username="Orders" class="nav-item">
+              <a href="orders.html" class="nav-link"
+                ><span class="pcoded-micon"
+                  ><i class="fas fa-dolly-flatbed"></i></span
+                ><span class="pcoded-mtext">Orders</span></a
+              >
+            </li>
+            <li data-username="Configurations " class="nav-item pcoded-hasmenu">
+              <a href="#!" class="nav-link"
+                ><span class="pcoded-micon"
+                  ><i class="mdi mdi-folder-multiple-outline"></i></span
+                ><span class="pcoded-mtext">Configurations</span></a
+              >
+              <ul class="pcoded-submenu">
+                <li class="">
+                  <a href="generalConfiguration.html" class=""
+                    >General Configuration</a
+                  >
+                </li>
+                <li class="">
+                  <a href="configurations.html" class="">Configurations</a>
+                </li>
+              </ul>
+            </li>
+            <li data-username="Messages" class="nav-item">
+              <a href="messages.html" class="nav-link"
+                ><span class="pcoded-micon"
+                  ><i class="fas fa-comments"></i></span
+                ><span class="pcoded-mtext">Messages</span></a
+              >
+            </li>
+
+            <li data-username="Settings" class="nav-item">
+              <a href="settings.html" class="nav-link"
+                ><span class="pcoded-micon"
+                  ><i class="feather icon-settings"></i></span
+                ><span class="pcoded-mtext">Settings</span></a
+              >
+            </li>
+            <li data-username="Need Support" class="nav-item">
+              <a href="#!" class="nav-link" target="_blank"
+                ><span class="pcoded-micon"
+                  ><i class="feather icon-help-circle"></i></span
+                ><span class="pcoded-mtext">Need support ?</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- [ navigation menu ] end -->
+
+    <!-- [ Header ] start -->
+    <header
+      class="navbar pcoded-header navbar-expand-lg navbar-light headerpos-fixed headerpos-fixed"
+    >
+      <div class="m-header">
+        <a class="mobile-menu" id="mobile-collapse1" href="#!"><span></span></a>
+        <a href="index.html" class="b-brand">
+          <img src="assets/images/logo.svg" alt="" class="logo images" />
+          <img
+            src="assets/images/logo-icon.svg"
+            alt=""
+            class="logo-thumb images"
+          />
+        </a>
+      </div>
+      <a class="mobile-menu" id="mobile-header" href="#!">
+        <i class="feather icon-more-horizontal"></i>
+      </a>
+      <div class="collapse navbar-collapse">
+        <h4 class="ms-3 my-auto"><i class="fas fa-users me-2"></i>Customers</h4>
+        <a href="#!" class="mob-toggler"></a>
+        <ul class="navbar-nav ms-auto">
+          <li>
+            <div class="dropdown">
+              <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                ><i class="icon feather icon-bell"></i
+              ></a>
+              <div class="dropdown-menu dropdown-menu-end notification">
+                <div class="noti-head">
+                  <h6 class="d-inline-block m-b-0">Notifications</h6>
+                  <div class="float-end">
+                    <a href="#!" class="m-r-10">mark as read</a>
+                    <a href="#!">clear all</a>
+                  </div>
+                </div>
+                <ul class="noti-body">
+                  <li class="n-title">
+                    <p class="m-b-0">NEW</p>
+                  </li>
+                  <li class="notification">
+                    <div class="d-flex">
+                      <img
+                        class="img-radius"
+                        src="assets/images/user/avatar-1.jpg"
+                        alt="Generic placeholder image"
+                      />
+                      <div class="flex-grow-1">
+                        <p>
+                          <strong>John Doe</strong
+                          ><span class="n-time text-muted"
+                            ><i class="icon feather icon-clock m-r-10"></i>5
+                            min</span
+                          >
+                        </p>
+                        <p>New ticket Added</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="n-title">
+                    <p class="m-b-0">EARLIER</p>
+                  </li>
+                  <li class="notification">
+                    <div class="d-flex">
+                      <img
+                        class="img-radius"
+                        src="assets/images/user/avatar-2.jpg"
+                        alt="Generic placeholder image"
+                      />
+                      <div class="flex-grow-1">
+                        <p>
+                          <strong>Joseph William</strong
+                          ><span class="n-time text-muted"
+                            ><i class="icon feather icon-clock m-r-10"></i>10
+                            min</span
+                          >
+                        </p>
+                        <p>Prchace New Theme and make payment</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="notification">
+                    <div class="d-flex">
+                      <img
+                        class="img-radius"
+                        src="assets/images/user/avatar-3.jpg"
+                        alt="Generic placeholder image"
+                      />
+                      <div class="flex-grow-1">
+                        <p>
+                          <strong>Sara Soudein</strong
+                          ><span class="n-time text-muted"
+                            ><i class="icon feather icon-clock m-r-10"></i>12
+                            min</span
+                          >
+                        </p>
+                        <p>currently login</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="notification">
+                    <div class="d-flex">
+                      <img
+                        class="img-radius"
+                        src="assets/images/user/avatar-1.jpg"
+                        alt="Generic placeholder image"
+                      />
+                      <div class="flex-grow-1">
+                        <p>
+                          <strong>Joseph William</strong
+                          ><span class="n-time text-muted"
+                            ><i class="icon feather icon-clock m-r-10"></i>30
+                            min</span
+                          >
+                        </p>
+                        <p>Prchace New Theme and make payment</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="notification">
+                    <div class="d-flex">
+                      <img
+                        class="img-radius"
+                        src="assets/images/user/avatar-3.jpg"
+                        alt="Generic placeholder image"
+                      />
+                      <div class="flex-grow-1">
+                        <p>
+                          <strong>Sara Soudein</strong
+                          ><span class="n-time text-muted"
+                            ><i class="icon feather icon-clock m-r-10"></i>1
+                            hour</span
+                          >
+                        </p>
+                        <p>currently login</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="notification">
+                    <div class="d-flex">
+                      <img
+                        class="img-radius"
+                        src="assets/images/user/avatar-1.jpg"
+                        alt="Generic placeholder image"
+                      />
+                      <div class="flex-grow-1">
+                        <p>
+                          <strong>Joseph William</strong
+                          ><span class="n-time text-muted"
+                            ><i class="icon feather icon-clock m-r-10"></i>2
+                            hour</span
+                          >
+                        </p>
+                        <p>Prchace New Theme and make payment</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="noti-footer">
+                  <a href="#!">show all</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown drp-user">
+              <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+                <i class="icon feather icon-settings"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-end profile-notification">
+                <div class="pro-head">
+                  <img
+                    src="assets/images/user/avatar-1.jpg"
+                    class="img-radius"
+                    alt="User-Profile-Image"
+                  />
+                  <span>John Doe</span>
+                  <a href="signin.html" class="dud-logout" title="Logout">
+                    <i class="feather icon-log-out"></i>
+                  </a>
+                </div>
+                <ul class="pro-body">
+                  <li>
+                    <a href="#!" class="dropdown-item"
+                      ><i class="feather icon-settings"></i> Settings</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#!" class="dropdown-item"
+                      ><i class="feather icon-user"></i> Profile</a
+                    >
+                  </li>
+                  <li>
+                    <a href="message.html" class="dropdown-item"
+                      ><i class="feather icon-mail"></i> My Messages</a
+                    >
+                  </li>
+                  <li>
+                    <a href="signin.html" class="dropdown-item text-danger"
+                      ><i class="feather icon-lock"></i> Log out</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- [ Header ] end -->
+
+    <!-- [ Add Method Modal ] start -->
+    <div
+      id="exampleModalCenter"
+      class="modal fade"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">
+              Add Customer
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <form>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-6 mb-3">
+                  <label class="form-label">Name:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="Toqa Darwish"
+                    
+                  />
+                </div>
+                <div class="col-6 mb-3">
+                  <label class="form-label">Username:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="Toqa_darwish123"
+                    
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-6 mb-3">
+                  <label class="form-label">Email:</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    value="Toqa_darwish123@gmail.com"
+                    
+                  />
+                </div>
+                <div class="col-6 mb-3">
+                  <label class="form-label">Zip Code:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="01234567"
+                    
+                  />
+                </div>
+              </div>
+<div class="row">
+
+  <div class="mb-3 col-6">
+    <label class="form-label">Sponsor:</label>
+    <input
+    type="text"
+    class="form-control"
+    value="Ali Shahin"
+    
+    />
+  </div>
+  <div class="mb-3 col-6">
+    <label class="form-label">Address:</label>
+    <input
+    type="text"
+    class="form-control"
+    value="66, street 36, building 3, alhay 3, Mohandissin, Giza"
+    
+    />
+  </div>
+</div>
+
+              <div class="row">
+                <div class="col-6 mb-3">
+                  <label class="form-label">Phone number 1:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="01111111111"
+                    
+                  />
+                </div>
+                <div class="col-6 mb-3">
+                  <label class="form-label">Phone number 2:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="01111111111"
+                    
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4 mb-3">
+                  <label class="form-label">Country:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="Egypt"
+                    
+                  />
+                </div>
+                <div class="col-4 mb-3">
+                  <label class="form-label">State:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="Giza"
+                    
+                  />
+                </div>
+                <div class="col-4 mb-3">
+                  <label class="form-label">City:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="Mohandissin"
+                    
+                  />
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">ID or Passport </label>
+                <div class="input-group mb-3">
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="inputGroupFile01"
+                    accept="image/*"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- [ Add Method Modal] end -->
+
+    <!-- [ Main Content ] start -->
+    <div class="pcoded-main-container">
+      <div class="pcoded-wrapper">
+        <div class="pcoded-content">
+          <div class="pcoded-inner-content">
+            <div class="main-body">
+              <div class="page-wrapper">
+                <div class="card">
+                  <div
+                    class="card-header d-flex justify-content-between align-items-center"
+                  >
+                    <h4 class="mb-3">Customers</h4>
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModalCenter"
+                      class="btn btn-primary"
+                    >
+                      <i class="feather icon-plus-circle"></i>
+                      Add Customer
+                    </button>
+                  </div>
+                  <div class="card-body">
+                    <div class="dt-responsive table-responsive">
+                      <table
+                        id="simpletable"
+                        class="text-center table table-striped table-bordered nowrap"
+                      >
+                        <thead>
+                          <tr>
+                            <th>Image</th>
+                            <th>UserName</th>
+                            <th>Email</th>
+                            <th>Sponsor</th>
+                            <th>Phone Number</th>
+                            <th>Country</th>
+                            <th>Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody class="fs-6 fw-bold">
+                          <tr>
+                            <td>
+                              <img
+                                src="assets/images/user/avatar-2.jpg"
+                                class="rounded-circle"
+                                width="40"
+                                alt=""
+                              />
+                            </td>
+                            <td>3lwa88</td>
+                            <td>alaa.eldeyn@gmail.com</td>
+                            <td>01010385495</td>
+                            <td>Ali Shahin</td>
+                            <td>Egypt</td>
+                            <td class="d-flex justify-content-center align-items-center">
+                              <button class="btn btn-primary btn-sm">
+                                <i class="feather icon-eye mx-0"></i>
+                              </button>
+                              <div class="form-check form-switch">
+                                <input type="checkbox" class="form-check-input input-primary" id="customswitch1">
+                                <label class="form-check-label" style="font-size: 12px;" for="customswitch1">Active / DeActive</label>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img
+                                src="assets/images/user/avatar-2.jpg"
+                                class="rounded-circle"
+                                width="40"
+                                alt=""
+                              />
+                            </td>
+                            <td>3lwa88</td>
+                            <td>alaa.eldeyn@gmail.com</td>
+                            <td>01010385495</td>
+                            <td>Ali Shahin</td>
+                            <td>Egypt</td>
+                            <td class="d-flex justify-content-center align-items-center">
+                              <button class="btn btn-primary btn-sm">
+                                <i class="feather icon-eye mx-0"></i>
+                              </button>
+                              <div class="form-check form-switch">
+                                <input type="checkbox" class="form-check-input input-primary" id="customswitch2">
+                                <label class="form-check-label" style="font-size: 12px;" for="customswitch2">Active / DeActive</label>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img
+                                src="assets/images/user/avatar-2.jpg"
+                                class="rounded-circle"
+                                width="40"
+                                alt=""
+                              />
+                            </td>
+                            <td>3lwa88</td>
+                            <td>alaa.eldeyn@gmail.com</td>
+                            <td>01010385495</td>
+                            <td>Ali Shahin</td>
+                            <td>Egypt</td>
+                            <td class="d-flex justify-content-center align-items-center">
+                              <button class="btn btn-primary btn-sm">
+                                <i class="feather icon-eye mx-0"></i>
+                              </button>
+                              <div class="form-check form-switch">
+                                <input type="checkbox" class="form-check-input input-primary" id="customswitch3">
+                                <label class="form-check-label" style="font-size: 12px;" for="customswitch3">Active / DeActive</label>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- [ Main Content ] end -->
+
+    <!-- [ Floating Whatsapp ] start -->
+    <div
+      class="position-fixed bottom-0 end-0 m-4 rounded-pill bg-success text-white d-flex justify-content-center align-center"
+      style="width: 50px; height: 50px; cursor: pointer"
+    >
+      <i class="fab fa-whatsapp fs-3 mt-2"></i>
+    </div>
+    <!-- [ Floating Whatsapp ] end -->
+
+    <script src="assets/js/vendor-all.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/pcoded.min.js"></script>
+      <!-- datatable Js -->
+  <script src="assets/plugins/data-tables/js/datatables.min.js"></script>
+  <script src="assets/js/pages/data-basic-custom.js"></script>
+  </body>
+</html>
