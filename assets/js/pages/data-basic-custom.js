@@ -9,7 +9,14 @@ $(document).ready(function() {
                 [3, "desc"]
             ]
         });
-
+        // [ Default Ordering ] searching for all columns
+        $('.datatable').each(function () {
+            $(this).DataTable({
+            paging: true,
+            ordering: true,
+            searching: true
+            });
+        });
         // [ Multi-Column Ordering ]
         $('#multi-colum-dt').DataTable({
             columnDefs: [{
