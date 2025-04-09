@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admins</title>
+    <title>Customer Details</title>
     <!-- Favicon icon -->
     <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
     <!-- fontawesome icon -->
@@ -16,17 +16,14 @@
       rel="stylesheet"
       href="assets/plugins/animation/css/animate.min.css"
     />
-    <!-- data tables css -->
-    <link
-      rel="stylesheet"
-      href="assets/plugins/data-tables/css/datatables.min.css"
-    />
-      <!-- material icon -->
+      <!-- data tables css -->
+  <link rel="stylesheet" href="assets/plugins/data-tables/css/datatables.min.css">
+    <!-- vendor css -->
+       <!-- material icon -->
   <link
     rel="stylesheet"
     href="assets/fonts/material/css/materialdesignicons.min.css"
   />
-    <!-- vendor css -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
@@ -163,7 +160,7 @@
         <i class="feather icon-more-horizontal"></i>
       </a>
       <div class="collapse navbar-collapse">
-        <h4 class="ms-3 my-auto"><i class="fas fa-users me-2"></i>Admins</h4>
+        <h4 class="ms-3 my-auto"><i class="fas fa-users me-2"></i>Customer Details</h4>
         <a href="#!" class="mob-toggler"></a>
         <ul class="navbar-nav ms-auto">
           <li>
@@ -354,168 +351,6 @@
     </header>
     <!-- [ Header ] end -->
 
-    <!-- [ Add Method Modal ] start -->
-    <div
-      id="exampleModalCenter"
-      class="modal fade"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalCenterTitle">
-              User Information
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <form>
-            <div class="modal-body">
-              <div class="row">
-                <div class="col-6 mb-3">
-                  <label class="form-label">Name:</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    value="Toqa Darwish"
-                    readonly
-                  />
-                </div>
-                <div class="col-6 mb-3">
-                  <label class="form-label">Username:</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    value="Toqa_darwish123"
-                    readonly
-                  />
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-6 mb-3">
-                  <label class="form-label">Email:</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    value="Toqa_darwish123@gmail.com"
-                    readonly
-                  />
-                </div>
-                <div class="col-6 mb-3">
-                  <label class="form-label">Zip Code:</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    value="01234567"
-                    readonly
-                  />
-                </div>
-              </div>
-
-              <div class="mb-3">
-                <label class="form-label">Address:</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  value="66, street 36, building 3, alhay 3, Mohandissin, Giza"
-                  readonly
-                />
-              </div>
-
-              <div class="row">
-                <div class="col-6 mb-3">
-                  <label class="form-label">Phone number 1:</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    value="01111111111"
-                    readonly
-                  />
-                </div>
-                <div class="col-6 mb-3">
-                  <label class="form-label">Phone number 2:</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    value="01111111111"
-                    readonly
-                  />
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-4 mb-3">
-                  <label class="form-label">Country:</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    value="Egypt"
-                    readonly
-                  />
-                </div>
-                <div class="col-4 mb-3">
-                  <label class="form-label">State:</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    value="Giza"
-                    readonly
-                  />
-                </div>
-                <div class="col-4 mb-3">
-                  <label class="form-label">City:</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    value="Mohandissin"
-                    readonly
-                  />
-                </div>
-              </div>
-
-              <div class="mb-3">
-                <label class="form-label">ID or Passport </label>
-                <div class="input-group align-items-center">
-                  <input
-                    type="file"
-                    class="form-control"
-                    id="inputGroupFile01"
-                    accept="image/*"
-                    multiple
-                  />
-                  <div
-                    id="previewContainer"
-                    style="display: flex; gap: 10px; flex-wrap: wrap"
-                    class="ms-2"
-                  ></div>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">Save</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-
-    <!-- [ Add Method Modal] end -->
-
     <!-- [ Main Content ] start -->
     <div class="pcoded-main-container">
       <div class="pcoded-wrapper">
@@ -524,106 +359,172 @@
             <div class="main-body">
               <div class="page-wrapper">
                 <div class="card">
-                  <div
-                    class="card-header d-flex justify-content-between align-items-center"
-                  >
-                    <h4 class="mb-3">Admins</h4>
-                    <button
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModalCenter"
-                      class="btn btn-primary"
-                    >
-                      <i class="feather icon-plus-circle"></i>
-                      Add Admin
-                    </button>
-                  </div>
-                  <div class="card-body">
-                    <div class="dt-responsive table-responsive">
-                      <table
-                        id="simpletable"
-                        class="text-center table table-striped table-bordered nowrap"
-                      >
-                        <thead>
-                          <tr>
-                            <th>Image</th>
-                            <th>UserName</th>
-                            <th>Email</th>
-                            <th>Phone Number</th>
-                            <th>Country</th>
-                            <th>Actions</th>
-                          </tr>
-                        </thead>
-                        <tbody class="fs-6 fw-bold">
-                          <tr>
-                            <td>
-                              <img
-                                src="assets/images/user/avatar-2.jpg"
-                                class="rounded-circle"
-                                width="40"
-                                alt=""
-                              />
-                            </td>
-                            <td>3lwa88</td>
-                            <td>alaa.eldeyn@gmail.com</td>
-                            <td>01010385495</td>
-                            <td>Egypt</td>
-                            <td>
-                              <button class="btn btn-primary btn-sm">
-                                <i class="feather icon-edit"></i>Edit
-                              </button>
-                              <button class="btn btn-danger btn-sm">
-                                <i class="feather icon-trash"></i>Delete
-                              </button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <img
-                                src="assets/images/user/avatar-2.jpg"
-                                class="rounded-circle"
-                                width="40"
-                                alt=""
-                              />
-                            </td>
-                            <td>3lwa88</td>
-                            <td>alaa.eldeyn@gmail.com</td>
-                            <td>01010385495</td>
-                            <td>Egypt</td>
-                            <td>
-                              <button class="btn btn-primary btn-sm">
-                                <i class="feather icon-edit"></i>Edit
-                              </button>
-                              <button class="btn btn-danger btn-sm">
-                                <i class="feather icon-trash"></i>Delete
-                              </button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <img
-                                src="assets/images/user/avatar-2.jpg"
-                                class="rounded-circle"
-                                width="40"
-                                alt=""
-                              />
-                            </td>
-                            <td>3lwa88</td>
-                            <td>alaa.eldeyn@gmail.com</td>
-                            <td>01010385495</td>
-                            <td>Egypt</td>
-                            <td>
-                              <button class="btn btn-primary btn-sm">
-                                <i class="feather icon-edit"></i>Edit
-                              </button>
-                              <button class="btn btn-danger btn-sm">
-                                <i class="feather icon-trash"></i>Delete
-                              </button>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                    <div class="card-body">
+                        <!-- Name & Email & Sponsor -->
+                        <div class="row align-items-center">
+                            <div class="col-md-9 align-self-end">
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Name:</label>
+                                    <input type="text" class="form-control" value="Toqa Darwish" readonly>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Email:</label>
+                                    <input type="text" class="form-control" value="Toqa.darwish123@gmail.com" readonly>
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <p class="fw-bold mb-1">Sponsor</p>
+                                <img src="assets/images/user/avatar-2.jpg" class="img-fluid rounded-circle mb-1" alt="Sponsor">
+                                <p class="mb-0">Hisham Abdo</p>
+                            </div>
+                        </div>
+                
+                        <!-- username & Zip Code -->
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Username:</label>
+                                <input type="text" class="form-control" value="Toqa.darwish123" readonly>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Zip Code:</label>
+                                <input type="text" class="form-control" value="01234567" readonly>
+                            </div>
+                        </div>
+                
+                        <!-- Address -->
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label class="form-label fw-bold">Address:</label>
+                                <input type="text" class="form-control" value="66, street 36 ,building 3 ahay 3 mohandissin .Giza" readonly>
+                            </div>
+                        </div>
+                
+                        <!-- Phone Numbers -->
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Phone number 1:</label>
+                                <input type="text" class="form-control" value="011111111111" readonly>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Phone number 2:</label>
+                                <input type="text" class="form-control" value="011111111111" readonly>
+                            </div>
+                        </div>
+                
+                        <!-- Country / State / City -->
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <label class="form-label fw-bold">Country:</label>
+                                <input type="text" class="form-control" value="Egypt" readonly>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label fw-bold">State:</label>
+                                <input type="text" class="form-control" value="Giza" readonly>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label fw-bold">City:</label>
+                                <input type="text" class="form-control" value="Mohandissin" readonly>
+                            </div>
+                        </div>
+                
+                        <!-- National ID / Passport -->
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">National ID / Passport:</label>
+                            <div class="row">
+                                <div class="col-md-6 mb-2">
+                                    <div class="border d-flex justify-content-center align-items-center" style="height:200px;">
+                                        <img src="assets/images/bg-images/11.jpg" class="w-100 h-100 object-fit-cover" alt="ID1">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <div class="border d-flex justify-content-center align-items-center" style="height:200px;">
+                                        <img src="assets/images/bg-images/11.jpg" class="w-100 h-100 object-fit-cover" alt="ID2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Orders Section -->
+                        <div class="mb-4">
+                            <h5 class="fw-bold mb-3">Pending Orders</h5>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>SNO</th>
+                                            <th>Image</th>
+                                            <th>Item</th>
+                                            <th>Quantity</th>
+                                            <th>Unit price</th>
+                                            <th>Sub Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>#12345</td>
+                                            <td>Image</td>
+                                            <td>Item Name</td>
+                                            <td>21</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#12345</td>
+                                            <td>Image</td>
+                                            <td>Item Name</td>
+                                            <td>22</td>
+                                            <td>2</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#12345</td>
+                                            <td>Image</td>
+                                            <td>Item Name</td>
+                                            <td>23</td>
+                                            <td>3</td>
+                                            <td>9</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                
+                        <div class="mb-3">
+                            <h5 class="fw-bold mb-3">Completed Orders</h5>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>SNO</th>
+                                            <th>Image</th>
+                                            <th>Item</th>
+                                            <th>Quantity</th>
+                                            <th>Unit price</th>
+                                            <th>Sub Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>#12345</td>
+                                            <td>Image</td>
+                                            <td>Item Name</td>
+                                            <td>21</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#12345</td>
+                                            <td>Image</td>
+                                            <td>Item Name</td>
+                                            <td>22</td>
+                                            <td>2</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -646,36 +547,8 @@
     <script src="assets/plugins/bootstrap/js/popper.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/pcoded.min.js"></script>
-    <!-- datatable Js -->
-    <script src="assets/plugins/data-tables/js/datatables.min.js"></script>
-    <script src="assets/js/pages/data-basic-custom.js"></script>
-    <script>
-      const fileInput = document.getElementById("inputGroupFile01");
-      const previewContainer = document.getElementById("previewContainer");
-  
-      fileInput.addEventListener("change", function () {
-        previewContainer.innerHTML = ""; // نفضي الصور القديمة
-  
-        const files = Array.from(this.files);
-  
-        files.forEach((file) => {
-          if (file.type.startsWith("image/")) {
-            const reader = new FileReader();
-  
-            reader.onload = function (e) {
-              const img = document.createElement("img");
-              img.src = e.target.result;
-              img.style.width = "50px";
-              img.style.height = "50px";
-              img.style.objectFit = "cover";
-              img.style.borderRadius = "10px";
-              previewContainer.appendChild(img);
-            };
-  
-            reader.readAsDataURL(file);
-          }
-        });
-      });
-    </script>
+      <!-- datatable Js -->
+  <script src="assets/plugins/data-tables/js/datatables.min.js"></script>
+  <script src="assets/js/pages/data-basic-custom.js"></script>
   </body>
 </html>

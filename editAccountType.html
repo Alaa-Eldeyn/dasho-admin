@@ -4,20 +4,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Account Types</title>
+  <title>Edit Account Types</title>
   <!-- Favicon icon -->
   <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
   <!-- fontawesome icon -->
   <link rel="stylesheet" href="assets/fonts/fontawesome/css/fontawesome-all.min.css" />
   <!-- animation css -->
   <link rel="stylesheet" href="assets/plugins/animation/css/animate.min.css" />
-  <!-- data tables css -->
-  <link rel="stylesheet" href="assets/plugins/data-tables/css/datatables.min.css">
   <!-- material icon -->
-  <link
-    rel="stylesheet"
-    href="assets/fonts/material/css/materialdesignicons.min.css"
-  />
+  <link rel="stylesheet" href="assets/fonts/material/css/materialdesignicons.min.css" />
+  <!-- select2 css -->
+  <link rel="stylesheet" href="assets/css/plugins/select2.min.css">
   <!-- vendor css -->
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -69,7 +66,8 @@
                   class="fas fa-dolly-flatbed"></i></span><span class="pcoded-mtext">Orders</span></a>
           </li>
           <li data-username="Configurations " class="nav-item pcoded-hasmenu">
-            <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="mdi mdi-folder-multiple-outline"></i></span><span
+            <a href="#!" class="nav-link"><span class="pcoded-micon"><i
+                  class="mdi mdi-folder-multiple-outline"></i></span><span
                 class="pcoded-mtext">Configurations</span></a>
             <ul class="pcoded-submenu">
               <li class="">
@@ -91,7 +89,8 @@
           </li>
           <li data-username="Need Support" class="nav-item">
             <a href="#!" class="nav-link" target="_blank"><span class="pcoded-micon"><i
-                  class="feather icon-help-circle"></i></span><span class="pcoded-mtext">Need support ?</span></a>
+                  class="feather icon-help-circle"></i></span><span class="pcoded-mtext">Need support
+                ?</span></a>
           </li>
         </ul>
       </div>
@@ -113,7 +112,7 @@
     </a>
     <div class="collapse navbar-collapse">
       <h4 class="ms-3 my-auto">
-        <i class="fas fa-user me-2"></i>Account Types
+        <i class="fas fa-user me-2"></i>Edit Account Types
       </h4>
       <a href="#!" class="mob-toggler"></a>
       <ul class="navbar-nav ms-auto">
@@ -235,13 +234,15 @@
               </div>
               <ul class="pro-body">
                 <li>
-                  <a href="#!" class="dropdown-item"><i class="feather icon-settings"></i> Settings</a>
+                  <a href="#!" class="dropdown-item"><i class="feather icon-settings"></i>
+                    Settings</a>
                 </li>
                 <li>
                   <a href="#!" class="dropdown-item"><i class="feather icon-user"></i> Profile</a>
                 </li>
                 <li>
-                  <a href="message.html" class="dropdown-item"><i class="feather icon-mail"></i> My Messages</a>
+                  <a href="message.html" class="dropdown-item"><i class="feather icon-mail"></i> My
+                    Messages</a>
                 </li>
                 <li>
                   <a href="signin.html" class="dropdown-item text-danger"><i class="feather icon-lock"></i> Log out</a>
@@ -255,138 +256,6 @@
   </header>
   <!-- [ Header ] end -->
 
-  <!-- [ Add Method Modal ] start -->
-  <div id="exampleModalCenter" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">
-            Add Account Type
-          </h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <form>
-          <div class="modal-body">
-            <div class="row">
-
-              <div class="col-6 mb-3">
-                <label class="form-label" for="exampleInputAccount1">Name:</label>
-                <input type="text" class="form-control" id="exampleInputAccount1" aria-describedby="AccountHelp"
-                  placeholder="Enter Name" />
-              </div>
-              <div class="col-6 mb-3">
-                <label class="form-label" for="exampleInputAccount1">Starts by:</label>
-                <input type="text" class="form-control" id="exampleInputAccount1" aria-describedby="AccountHelp"
-                  placeholder="Enter Starting PVs" />
-              </div>
-            </div>
-            <div class="row">
-
-              <div class="col-6 mb-3">
-                <label class="form-label" for="exampleFormControlSelect1">Activated Accounts</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                  <option>A1</option>
-                  <option>A2</option>
-                  <option>A3</option>
-                </select>
-              </div>
-
-              <div class="col-6 mb-3">
-                <label class="form-label" for="exampleInputCommissionRate1">Commission Rate:</label>
-                <input type="text" class="form-control" id="exampleInputCommissionRate1"
-                  aria-describedby="CommissionRateHelp" placeholder="Enter Commission Rate On Direct Sale" />
-              </div>
-            </div>
-            <div class="row">
-
-              <div class="col-4 mb-3">
-                <label class="form-label" for="exampleInputLeft1">Left PVs:</label>
-                <input type="number" class="form-control" id="exampleInputLeft1" aria-describedby="LeftHelp"
-                  placeholder="Enter Left No." />
-              </div>
-              <div class="col-4 mb-3">
-                <label class="form-label" for="exampleInputRight1">Right PVs:</label>
-                <input type="number" class="form-control" id="exampleInputRight1" aria-describedby="RightHelp"
-                  placeholder="Enter Right No." />
-              </div>
-              <div class="col-3 mb-3">
-                <label class="form-label" for="exampleInputEquivalentDollars1">Equivalent Dollars <span class="fw-bold">($)</span>:</label>
-                <input type="number" class="form-control" id="exampleInputEquivalentDollars1"
-                  aria-describedby="EquivalentDollarsHelp" placeholder="Enter EquivalentDollars No." />
-              </div>
-              <div class="col-1 align-self-center fs-2 mt-3" style="cursor: pointer;">
-
-                <i class="feather icon-plus-circle"></i>
-              </div>
-            </div>
-            <div class="d-flex gap-2 justify-content-between align-items-center">
-              <div class="mb-3 flex-grow-1">
-                <label class="form-label" for="exampleInputAccount1">Benefit:</label>
-                <input type="text" class="form-control" id="exampleInputAccount1" aria-describedby="AccountHelp"
-                  placeholder="Enter Benefit" />
-              </div>
-              <div class="col-1 d-flex justify-content-center align-self-center fs-2 mt-3" style="cursor: pointer;">
-
-                <i class="feather icon-plus-circle"></i>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-light" data-bs-dismiss="modal">
-              Discard
-            </button>
-            <button type="button" class="btn btn-primary">Add</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <!-- [ Add Method Modal] end -->
-
-      <!-- [ Confirm delete Modal ] start -->
-      <div
-      id="confirmation"
-      class="modal fade"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="confirmationTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="confirmationTitle">
-              Confirmation
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <form>
-            <div class="modal-body">
-              
-<h5>Are you sure you want to delete Account Type</h5>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-light"
-                data-bs-dismiss="modal"
-              >
-                Cancel
-              </button>
-              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Yes, Delete</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <!-- [ Confirm delete Modal] end -->
-
   <!-- [ Main Content ] start -->
   <div class="pcoded-main-container">
     <div class="pcoded-wrapper">
@@ -395,102 +264,103 @@
           <div class="main-body">
             <div class="page-wrapper">
               <div class="card">
-                <div class="card-header d-flex justify-content-between align-items-center">
-                  <h4 class="mb-3">Account Types</h4>
-                  <a href="addAccountType.html" class="btn btn-primary">
-                    <i class="feather icon-plus-circle"></i>
-                    Add Account Type
-                  </a>
-                </div>
                 <div class="card-body">
-                  <div class="dt-responsive table-responsive">
-                    <table id="simpletable" class="text-center table table-striped table-bordered nowrap">
-                      <thead>
-                        <tr>
-                          <th>Name</th>
-                          <th>Start By</th>
-                          <th>Mini Limit Pvs</br> <span class="text-secondary" style="font-size: 10px;">(Binary
-                              Commission Start)</span></th>
-                          <th>Equivalent Dollars</th>
-                          <th>Max Limit PVs</th>
-                          <th>Max Earns/week</br> <span class="text-secondary" style="font-size: 10px;">(For every
-                              week)</span></th>
-                          <th>Activated Accounts</th>
-                          <th>Actions</th>
-                        </tr>
-                      </thead>
-                      <tbody class="fs-6 fw-bold">
-                        <tr>
-                          <td>Starter</td>
-                          <td>500 PV</td>
-                          <td>1000 PV</td>
-                          <td>$15</td>
-                          <td>30,000 PV</td>
-                          <td>$200</td>
-                          <td>A1</td>
-                          <td class="d-flex gap-1 justify-content-center align-items-center">
-                            <a href="editAccountType.html" class="btn btn-primary btn-sm">
-                              <i class="feather icon-edit m-0"></i>
-                              </a>
-                            <button class="btn btn-danger  btn-sm" data-bs-toggle="modal" data-bs-target="#confirmation">
-                              <i class="feather icon-trash-2 m-0"></i>
-                              </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Bronze</td>
-                          <td>1000 PV</td>
-                          <td>1000 PV</td>
-                          <td>$25</td>
-                          <td>client</td>
-                          <td>$300</td>
-                          <td>A1</td>
-                          <td class="d-flex gap-1 justify-content-center align-items-center">
-                            <a href="editAccountType.html" class="btn btn-primary btn-sm">
-                              <i class="feather icon-edit m-0"></i>
-                              </a>
-                            <button class="btn btn-danger  btn-sm" data-bs-toggle="modal" data-bs-target="#confirmation">
-                              <i class="feather icon-trash-2 m-0"></i>
-                              </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Silver</td>
-                          <td>2000 PV</td>
-                          <td>1000 PV</td>
-                          <td>$25</td>
-                          <td>Bonus</td>
-                          <td>$300</td>
-                          <td>A1 , A2</td>
-                          <td class="d-flex gap-1 justify-content-center align-items-center">
-                            <a href="editAccountType.html" class="btn btn-primary btn-sm">
-                              <i class="feather icon-edit m-0"></i>
-                              </a>
-                            <button class="btn btn-danger  btn-sm" data-bs-toggle="modal" data-bs-target="#confirmation">
-                              <i class="feather icon-trash-2 m-0"></i>
-                              </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Gold</td>
-                          <td>3000 PV</td>
-                          <td>2000 PV</td>
-                          <td>$25</td>
-                          <td>Bonus</td>
-                          <td>$300</td>
-                          <td>A1 , A2 , A3</td>
-                          <td class="d-flex gap-1 justify-content-center align-items-center">
-                            <a href="editAccountType.html" class="btn btn-primary btn-sm">
-                              <i class="feather icon-edit m-0"></i>
-                              </a>
-                            <button class="btn btn-danger  btn-sm" data-bs-toggle="modal" data-bs-target="#confirmation">
-                              <i class="feather icon-trash-2 m-0"></i>
-                              </button>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  <div class="row">
+                    <div class="col-6 mb-3">
+                      <label class="form-label" for="exampleInputAccount1">Name:</label>
+                      <input type="text" class="form-control" id="exampleInputAccount1" aria-describedby="AccountHelp"
+                        placeholder="Enter Name" />
+                    </div>
+                    <div class="col-6 mb-3">
+                      <label class="form-label" for="exampleInputAccount1">Starts by:</label>
+                      <input type="text" class="form-control" id="exampleInputAccount1" aria-describedby="AccountHelp"
+                        placeholder="Enter Starting PVs" />
+                    </div>
                   </div>
+                  <div class="row">
+                    <div class="col-6 mb-3">
+                      <label class="form-label" for="exampleFormControlSelect1">Activated
+                        Accounts</label>
+                      <select class="js-example-basic-multiple col-sm-12" multiple="multiple">
+                        <option value="A1">A1</option>
+                        <option value="A2">A2</option>
+                        <option value="A3">A3</option>
+                      </select>
+                    </div>
+
+                    <div class="col-6 mb-3">
+                      <label class="form-label" for="exampleInputCommissionRate1">Commission
+                        Rate:</label>
+                      <input type="text" class="form-control" id="exampleInputCommissionRate1"
+                        aria-describedby="CommissionRateHelp" placeholder="Enter Commission Rate On Direct Sale" />
+                    </div>
+                  </div>
+                  <!-- PVs Inputs -->
+                  <div class="d-flex gap-4 justify-content-between align-items-center">
+                    <div class="col flex-grow-1 w-100 mb-3">
+                      <label class="form-label" for="leftPV">Left PVs:</label>
+                      <input type="number" class="form-control" id="leftPV" placeholder="Enter Left No." />
+                    </div>
+                    <div class="col flex-grow-1 w-100 mb-3">
+                      <label class="form-label" for="rightPV">Right PVs:</label>
+                      <input type="number" class="form-control" id="rightPV" placeholder="Enter Right No." />
+                    </div>
+                    <div class="col flex-grow-1 w-100 mb-3">
+                      <label class="form-label" for="equivalent">Equivalent Dollars <span
+                          class="fw-bold">($)</span>:</label>
+                      <input type="number" class="form-control" id="equivalent"
+                        placeholder="Enter Equivalent Dollars" />
+                    </div>
+                    <div class="col flex-grow-0 w-100 align-self-center fs-2 mt-3" style="cursor: pointer"
+                      onclick="addPVRow()">
+                      <i class="feather icon-plus-circle"></i>
+                    </div>
+                  </div>
+
+                  <!-- PVs Table -->
+                  <div class="table-responsive">
+                    <table class="table table-bordered text-center">
+                    <thead>
+                      <tr>
+                        <th>Left PVs Amount</th>
+                        <th>Right PVs Amount</th>
+                        <th>Equivalent Dollars</th>
+                        <th>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody id="pvTableBody"></tbody>
+                  </table>
+                  </div>
+
+                  <!-- Benefits Inputs -->
+                  <div class="d-flex gap-4 justify-content-between align-items-center">
+                    <div class="mb-3 flex-grow-1">
+                      <label class="form-label" for="benefitInput">Benefit:</label>
+                      <input type="text" class="form-control" id="benefitInput" placeholder="Write Account Type Benefits" />
+                    </div>
+                    <div class="col flex-grow-0 d-flex justify-content-center align-self-center fs-2 mt-3"
+                      style="cursor: pointer" onclick="addBenefitRow()">
+                      <i class="feather icon-plus-circle"></i>
+                    </div>
+                  </div>
+
+                  <!-- Benefits Table -->
+                  <table class="table table-bordered text-center">
+                    <thead>
+                      <tr>
+                        <th class="w-75">Benefit</th>
+                        <th>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody id="benefitTableBody"></tbody>
+                  </table>
+
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                  <a href="accountTypes.html" class="btn btn-light">
+                    Back
+                  </a>
+                  <button type="button" class="btn btn-primary">Save Edits</button>
                 </div>
               </div>
             </div>
@@ -513,10 +383,62 @@
   <script src="assets/plugins/bootstrap/js/popper.min.js"></script>
   <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/js/pcoded.min.js"></script>
+  <!-- select2 Js -->
+  <script src="assets/js/plugins/select2.full.min.js"></script>
+  <!-- form-select-custom Js -->
+  <script src="assets/js/pages/form-select-custom.js"></script>
+
+  <script>
+    function addPVRow() {
+      const left = document.getElementById("leftPV").value;
+      const right = document.getElementById("rightPV").value;
+      const dollars = document.getElementById("equivalent").value;
   
-  <!-- datatable Js -->
-  <script src="assets/plugins/data-tables/js/datatables.min.js"></script>
-  <script src="assets/js/pages/data-basic-custom.js"></script>
+      if (!left || !right || !dollars) return;
+  
+      const table = document.getElementById("pvTableBody");
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td>${left} PV</td>
+        <td>${right} PV</td>
+        <td>$ ${dollars}</td>
+        <td>
+          <button class="btn btn-warning btn-sm" onclick="editRow(this)"><i class="feather icon-edit m-0"></i></button>
+          <button class="btn btn-danger btn-sm" onclick="deleteRow(this)"><i class="feather icon-trash-2 m-0"></i></button>
+        </td>`;
+      table.appendChild(row);
+      
+      document.getElementById("leftPV").value = "";
+      document.getElementById("rightPV").value = "";
+      document.getElementById("equivalent").value = "";
+    }
+  
+    function addBenefitRow() {
+      const benefit = document.getElementById("benefitInput").value;
+      if (!benefit) return;
+  
+      const table = document.getElementById("benefitTableBody");
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td>${benefit}</td>
+        <td>
+          <button class="btn btn-warning btn-sm" onclick="editRow(this)"><i class="feather icon-edit m-0"></i></button>
+          <button class="btn btn-danger btn-sm" onclick="deleteRow(this)"><i class="feather icon-trash-2 m-0"></i></button>
+        </td>`;
+      table.appendChild(row);
+  
+      document.getElementById("benefitInput").value = "";
+    }
+  
+    function deleteRow(btn) {
+      btn.closest("tr").remove();
+    }
+  
+    function editRow(btn) {
+      // This function is a placeholder for the edit functionality.
+      alert("Edit feature under development!");
+    }
+  </script>
 </body>
 
 </html>
