@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Customer Details</title>
+    <title>Events</title>
     <!-- Favicon icon -->
     <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
     <!-- fontawesome icon -->
@@ -16,18 +16,26 @@
       rel="stylesheet"
       href="assets/plugins/animation/css/animate.min.css"
     />
-      <!-- data tables css -->
-  <link rel="stylesheet" href="assets/plugins/data-tables/css/datatables.min.css">
-    <!-- vendor css -->
-       <!-- material icon -->
+    <!-- data tables css -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/data-tables/css/datatables.min.css"
+    />
+           <!-- material icon -->
   <link
     rel="stylesheet"
-    href="assets/fonts/material/css/materialdesignicons.min.css"
-  />
+    href="assets/fonts/material/css/materialdesignicons.min.css"/>
+    <!-- vendor css -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-
   <body>
+    <!-- [ Pre-loader ] start -->
+    <div class="loader-bg">
+      <div class="loader-track">
+        <div class="loader-fill"></div>
+      </div>
+    </div>
+    <!-- [ Pre-loader ] End -->
     <!-- [ navigation menu ] start -->
       <nav class="pcoded-navbar menupos-fixed">
     <div class="navbar-wrapper">
@@ -153,7 +161,7 @@
         <i class="feather icon-more-horizontal"></i>
       </a>
       <div class="collapse navbar-collapse">
-        <h4 class="ms-3 my-auto"><i class="fas fa-users me-2"></i>Customer Details</h4>
+        <h4 class="ms-3 my-auto"><i class="feather icon-tv me-2"></i>Events</h4>
         <a href="#!" class="mob-toggler"></a>
         <ul class="navbar-nav ms-auto">
           <li>
@@ -352,172 +360,154 @@
             <div class="main-body">
               <div class="page-wrapper">
                 <div class="card">
-                    <div class="card-body">
-                        <!-- Name & Email & Sponsor -->
-                        <div class="row align-items-center">
-                            <div class="col-md-9 align-self-end">
-                                <div class="mb-3">
-                                    <label class="form-label fw-bold">Name:</label>
-                                    <input type="text" class="form-control" value="Toqa Darwish" readonly>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label fw-bold">Email:</label>
-                                    <input type="text" class="form-control" value="Toqa.darwish123@gmail.com" readonly>
-                                </div>
-                            </div>
-                            <div class="col-md-3 text-center">
-                                <p class="fw-bold mb-1">Sponsor</p>
-                                <img src="assets/images/user/avatar-2.jpg" class="img-fluid rounded-circle mb-1" alt="Sponsor">
-                                <p class="mb-0">Hisham Abdo</p>
-                            </div>
-                        </div>
-                
-                        <!-- username & Zip Code -->
-                        <div class="row mb-3">
-                            <div class="col-md-6">
-                                <label class="form-label fw-bold">Username:</label>
-                                <input type="text" class="form-control" value="Toqa.darwish123" readonly>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label fw-bold">Zip Code:</label>
-                                <input type="text" class="form-control" value="01234567" readonly>
-                            </div>
-                        </div>
-                
-                        <!-- Address -->
-                        <div class="row mb-3">
-                            <div class="col">
-                                <label class="form-label fw-bold">Address:</label>
-                                <input type="text" class="form-control" value="66, street 36 ,building 3 ahay 3 mohandissin .Giza" readonly>
-                            </div>
-                        </div>
-                
-                        <!-- Phone Numbers -->
-                        <div class="row mb-3">
-                            <div class="col-md-6">
-                                <label class="form-label fw-bold">Phone number 1:</label>
-                                <input type="text" class="form-control" value="011111111111" readonly>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label fw-bold">Phone number 2:</label>
-                                <input type="text" class="form-control" value="011111111111" readonly>
-                            </div>
-                        </div>
-                
-                        <!-- Country / State / City -->
-                        <div class="row mb-3">
-                            <div class="col-md-4">
-                                <label class="form-label fw-bold">Country:</label>
-                                <input type="text" class="form-control" value="Egypt" readonly>
-                            </div>
-                            <div class="col-md-4">
-                                <label class="form-label fw-bold">State:</label>
-                                <input type="text" class="form-control" value="Giza" readonly>
-                            </div>
-                            <div class="col-md-4">
-                                <label class="form-label fw-bold">City:</label>
-                                <input type="text" class="form-control" value="Mohandissin" readonly>
-                            </div>
-                        </div>
-                
-                        <!-- National ID / Passport -->
-                        <div class="mb-3">
-                            <label class="form-label fw-bold">National ID / Passport:</label>
-                            <div class="row">
-                                <div class="col-md-6 mb-2">
-                                    <div class="border d-flex justify-content-center align-items-center" style="height:200px;">
-                                        <img src="assets/images/bg-images/11.jpg" class="w-100 h-100 object-fit-cover" alt="ID1">
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-2">
-                                    <div class="border d-flex justify-content-center align-items-center" style="height:200px;">
-                                        <img src="assets/images/bg-images/11.jpg" class="w-100 h-100 object-fit-cover" alt="ID2">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                
-                        <!-- Orders Section -->
-                        <div class="mb-4">
-                            <h5 class="fw-bold mb-3">Pending Orders</h5>
-                            <div class="table-responsive">
-                                <table class="table table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th>SNO</th>
-                                            <th>Image</th>
-                                            <th>Item</th>
-                                            <th>Quantity</th>
-                                            <th>Unit price</th>
-                                            <th>Sub Total</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>#12345</td>
-                                            <td>Image</td>
-                                            <td>Item Name</td>
-                                            <td>21</td>
-                                            <td>1</td>
-                                            <td>1</td>
-                                        </tr>
-                                        <tr>
-                                            <td>#12345</td>
-                                            <td>Image</td>
-                                            <td>Item Name</td>
-                                            <td>22</td>
-                                            <td>2</td>
-                                            <td>4</td>
-                                        </tr>
-                                        <tr>
-                                            <td>#12345</td>
-                                            <td>Image</td>
-                                            <td>Item Name</td>
-                                            <td>23</td>
-                                            <td>3</td>
-                                            <td>9</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                
-                        <div class="mb-3">
-                            <h5 class="fw-bold mb-3">Completed Orders</h5>
-                            <div class="table-responsive">
-                                <table class="table table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th>SNO</th>
-                                            <th>Image</th>
-                                            <th>Item</th>
-                                            <th>Quantity</th>
-                                            <th>Unit price</th>
-                                            <th>Sub Total</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>#12345</td>
-                                            <td>Image</td>
-                                            <td>Item Name</td>
-                                            <td>21</td>
-                                            <td>1</td>
-                                            <td>1</td>
-                                        </tr>
-                                        <tr>
-                                            <td>#12345</td>
-                                            <td>Image</td>
-                                            <td>Item Name</td>
-                                            <td>22</td>
-                                            <td>2</td>
-                                            <td>4</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+                  <div
+                    class="card-header d-flex justify-content-between align-items-center"
+                  >
+                    <h4 class="mb-3">Events</h4>
+                    <a href="addEvent.html" class="btn btn-success">
+                      <i class="feather icon-plus-circle"></i> Add Event
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table
+                        id="simpletable"
+                        class="table table-bordered text-center"
+                      >
+                        <thead>
+                          <tr>
+                            <th>Image</th>
+                            <th>Title</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Price</th>
+                            <th>Booked Ticket</th>
+                            <th>Available Ticket</th>
+                            <th>Method</th>
+                            <th>Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <img
+                                src="/assets/images/user/avatar-2.jpg"
+                                alt="event"
+                                class="img-fluid"
+                                width="40px"
+                                height="40px"
+                              />
+                            </td>
+                            <td>Turning Dreams into Reality</td>
+                            <td>5 feb 2025 Thurs.</td>
+                            <td>9.00 PM to 10.00 PM</td>
+                            <td>Free</td>
+                            <td>50</td>
+                            <td>70</td>
+                            <td>Offline</td>
+                            <td>
+                              <button class="btn btn-warning btn-sm">
+                                <i class="feather m-0 icon-edit"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm">
+                                <i class="feather m-0 icon-trash"></i>
+                              </button>
+                              <button class="btn btn-info btn-sm">
+                                <i class="feather m-0 icon-bar-chart"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img
+                                src="/assets/images/user/avatar-2.jpg"
+                                alt="event"
+                                class="img-fluid"
+                                width="40px"
+                                height="40px"
+                              />
+                            </td>
+                            <td>Turning Dreams into Reality</td>
+                            <td>5 feb 2025 Thurs.</td>
+                            <td>9.00 PM to 10.00 PM</td>
+                            <td>100</td>
+                            <td>50</td>
+                            <td>70</td>
+                            <td>Online</td>
+                            <td>
+                              <button class="btn btn-warning btn-sm">
+                                <i class="feather m-0 icon-edit"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm">
+                                <i class="feather m-0 icon-trash"></i>
+                              </button>
+                              <button class="btn btn-info btn-sm">
+                                <i class="feather m-0 icon-bar-chart"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img
+                                src="/assets/images/user/avatar-2.jpg"
+                                alt="event"
+                                class="img-fluid"
+                                width="40px"
+                                height="40px"
+                              />
+                            </td>
+                            <td>Turning Dreams into Reality</td>
+                            <td>5 feb 2025 Thurs.</td>
+                            <td>9.00 PM to 10.00 PM</td>
+                            <td>50</td>
+                            <td>50</td>
+                            <td>70</td>
+                            <td>Offline</td>
+                            <td>
+                              <button class="btn btn-warning btn-sm">
+                                <i class="feather m-0 icon-edit"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm">
+                                <i class="feather m-0 icon-trash"></i>
+                              </button>
+                              <button class="btn btn-info btn-sm">
+                                <i class="feather m-0 icon-bar-chart"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img
+                                src="/assets/images/user/avatar-2.jpg"
+                                alt="event"
+                                class="img-fluid"
+                                width="40px"
+                                height="40px"
+                              />
+                            </td>
+                            <td>Turning Dreams into Reality</td>
+                            <td>5 feb 2025 Thurs.</td>
+                            <td>9.00 PM to 10.00 PM</td>
+                            <td>Free</td>
+                            <td>50</td>
+                            <td>70</td>
+                            <td>Offline</td>
+                            <td>
+                              <button class="btn btn-warning btn-sm">
+                                <i class="feather m-0 icon-edit"></i>
+                              </button>
+                              <button class="btn btn-danger btn-sm">
+                                <i class="feather m-0 icon-trash"></i>
+                              </button>
+                              <button class="btn btn-info btn-sm">
+                                <i class="feather m-0 icon-bar-chart"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -525,23 +515,13 @@
         </div>
       </div>
     </div>
-    <!-- [ Main Content ] end -->
-
-    <!-- [ Floating Whatsapp ] start -->
-    <div
-      class="position-fixed bottom-0 end-0 m-4 rounded-pill bg-success text-white d-flex justify-content-center align-center"
-      style="width: 50px; height: 50px; cursor: pointer"
-    >
-      <i class="fab fa-whatsapp fs-3 mt-2"></i>
-    </div>
-    <!-- [ Floating Whatsapp ] end -->
 
     <script src="assets/js/vendor-all.min.js"></script>
     <script src="assets/plugins/bootstrap/js/popper.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/pcoded.min.js"></script>
-      <!-- datatable Js -->
-  <script src="assets/plugins/data-tables/js/datatables.min.js"></script>
-  <script src="assets/js/pages/data-basic-custom.js"></script>
+    <!-- datatable Js -->
+    <script src="assets/plugins/data-tables/js/datatables.min.js"></script>
+    <script src="assets/js/pages/data-basic-custom.js"></script>
   </body>
 </html>
