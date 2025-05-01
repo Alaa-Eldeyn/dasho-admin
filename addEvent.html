@@ -16,6 +16,8 @@
       rel="stylesheet"
       href="assets/plugins/animation/css/animate.min.css"
     />
+          <!-- material icon -->
+          <link rel="stylesheet" href="assets/fonts/material/css/materialdesignicons.min.css" />
     <!-- vendor css -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
@@ -91,25 +93,10 @@
               </li>
             </ul>
           </li>
-          <li
-              data-username="events"
-              class="nav-item pcoded-hasmenu"
-            >
-              <a href="#!" class="nav-link"
-                ><span class="pcoded-micon"
-                  ><i class="feather icon-tv"></i></span
-                ><span class="pcoded-mtext">Events</span></a
-              >
-              <ul class="pcoded-submenu">
-                <li class=""><a href="events.html" class="">Events</a></li>
-                <li class="">
-                  <a href="eventsLeads.html" class="">Leads</a>
-                </li>
-                <li class="">
-                  <a href="eventsTopMarketers.html" class="">Top Marketers</a>
-                </li>
-              </ul>
-            </li>
+          <li data-username="Events" class="nav-item">
+            <a href="events.html" class="nav-link"><span class="pcoded-micon"><i
+                  class="feather icon-tv"></i></span><span class="pcoded-mtext">Events</span></a>
+          </li>
           <li data-username="Gifts" class="nav-item">
             <a href="gifts.html" class="nav-link"><span class="pcoded-micon"><i
                   class="fas fa-gift"></i></span><span class="pcoded-mtext">Gifts</span></a>
@@ -393,72 +380,41 @@
                       </div>
                     </div>
 
-                    <div
-                      class="col-md-3 d-flex justify-content-center align-items-center fs-4"
-                    >
-                      <div class="form-check pt-4 cursor-pointer">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="eventType"
-                          id="online"
-                        />
-                        <label class="form-check-label" for="online"
-                          >Online</label
-                        >
+                    <div class="row"><!-- Price + Free -->
+                      <div class="col-md-10 my-3">
+                        <label class="form-label">Price :</label>
+                        <input type="number" class="form-control" placeholder="Please enter price" />
                       </div>
-                    </div>
-                    <div
-                      class="col-md-3 d-flex justify-content-center align-items-center fs-4"
-                    >
-                      <div class="form-check pt-4 cursor-pointer">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="eventType"
-                          id="offline"
-                        />
-                        <label class="form-check-label" for="offline"
-                          >Offline</label
-                        >
+                      <div class="col-md-2 d-flex align-items-end mb-3 fs-5">
+                        <div class="form-check">
+                          <input id="free" class="form-check-input" type="checkbox" />
+                          <label class="form-check-label" for="free">Free</label>
+                        </div>
                       </div>
-                    </div>
-
-                    <div class="col-md-4">
-                      <label class="form-label">Price :</label>
-                      <input
-                        type="number"
-                        class="form-control"
-                        placeholder="please enter Price"
-                      />
-                    </div>
-                    <div class="col-md-2 d-flex align-items-end">
-                      <div class="form-check">
-                        <input
-                          id="price"
-                          class="form-check-input"
-                          type="checkbox"
-                          id="free"
-                        />
-                        <label class="form-check-label" for="free">Free</label>
+                      <!-- Event Type Selection -->
+                      <div class="col-md-6 d-flex justify-content-start align-items-center gap-4 fs-5">
+                        <label class="form-label fw-bold fs-6">Event Type:</label>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="eventType" id="online" value="online" />
+                          <label class="form-check-label" for="online">Online</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="eventType" checked id="offline" value="offline" />
+                          <label class="form-check-label" for="offline">Offline</label>
+                        </div>
                       </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <label class="form-label">Link :</label>
-                      <input
-                        type="text"
-                        class="form-control mt-2"
-                        placeholder="please enter Meeting Link"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <label class="form-label">Address :</label>
-                      <input
-                        type="text"
-                        class="form-control mt-2"
-                        placeholder="please enter event address"
-                      />
+                    
+                      <!-- Link Input (for Online) -->
+                      <div class="col-md-6 mb-3" id="linkField" style="display: none">
+                        <label class="form-label">Link :</label>
+                        <input type="text" class="form-control mt-2" placeholder="Please enter meeting link" />
+                      </div>
+                    
+                      <!-- Address Input (for Offline) -->
+                      <div class="col-md-6 mb-3 pe-0" id="addressField">
+                        <label class="form-label">Address :</label>
+                        <input type="text" class="form-control mt-2" placeholder="Please enter event address" />
+                      </div>
                     </div>
                     <div class="col-md-6">
                       <label class="form-label">Coupon Code :</label>
@@ -634,6 +590,26 @@
             reader.readAsDataURL(file);
           }
         });
+      });
+    </script>
+    <script>
+      const onlineRadio = document.getElementById("online");
+      const offlineRadio = document.getElementById("offline");
+      const linkField = document.getElementById("linkField");
+      const addressField = document.getElementById("addressField");
+      
+      onlineRadio.addEventListener("change", () => {
+        if (onlineRadio.checked) {
+          linkField.style.display = "block";
+          addressField.style.display = "none";
+        }
+      });
+
+      offlineRadio.addEventListener("change", () => {
+        if (offlineRadio.checked) {
+          addressField.style.display = "block";
+          linkField.style.display = "none";
+        }
       });
     </script>
   </body>

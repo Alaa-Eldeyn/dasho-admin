@@ -100,25 +100,10 @@
               </li>
             </ul>
           </li>
-          <li
-              data-username="events"
-              class="nav-item pcoded-hasmenu"
-            >
-              <a href="#!" class="nav-link"
-                ><span class="pcoded-micon"
-                  ><i class="feather icon-tv"></i></span
-                ><span class="pcoded-mtext">Events</span></a
-              >
-              <ul class="pcoded-submenu">
-                <li class=""><a href="events.html" class="">Events</a></li>
-                <li class="">
-                  <a href="eventsLeads.html" class="">Leads</a>
-                </li>
-                <li class="">
-                  <a href="eventsTopMarketers.html" class="">Top Marketers</a>
-                </li>
-              </ul>
-            </li>
+          <li data-username="Events" class="nav-item">
+            <a href="events.html" class="nav-link"><span class="pcoded-micon"><i
+                  class="feather icon-tv"></i></span><span class="pcoded-mtext">Events</span></a>
+          </li>
           <li data-username="Gifts" class="nav-item">
             <a href="gifts.html" class="nav-link"><span class="pcoded-micon"><i
                   class="fas fa-gift"></i></span><span class="pcoded-mtext">Gifts</span></a>
@@ -406,15 +391,18 @@
                             <td>70</td>
                             <td>Offline</td>
                             <td>
-                              <button class="btn btn-warning btn-sm">
+                              <button class="btn m-0 btn-warning btn-sm">
                                 <i class="feather m-0 icon-edit"></i>
                               </button>
-                              <button class="btn btn-danger btn-sm">
+                              <button class="btn m-0 btn-danger btn-sm">
                                 <i class="feather m-0 icon-trash"></i>
                               </button>
-                              <button class="btn btn-info btn-sm">
-                                <i class="feather m-0 icon-bar-chart"></i>
-                              </button>
+                              <a href="eventsLeads.html" >
+                                <img src="assets/images/leads.png" width="25px" alt="Leads">
+                              </a>
+                              <a href="eventsTopMarketers.html" >
+                                <img src="assets/images/top.png" width="35px" alt="Top Marketers">
+                              </a>
                             </td>
                           </tr>
                           <tr>
@@ -435,15 +423,18 @@
                             <td>70</td>
                             <td>Online</td>
                             <td>
-                              <button class="btn btn-warning btn-sm">
+                              <button class="btn m-0 btn-warning btn-sm">
                                 <i class="feather m-0 icon-edit"></i>
                               </button>
-                              <button class="btn btn-danger btn-sm">
+                              <button class="btn m-0 btn-danger btn-sm">
                                 <i class="feather m-0 icon-trash"></i>
                               </button>
-                              <button class="btn btn-info btn-sm">
-                                <i class="feather m-0 icon-bar-chart"></i>
-                              </button>
+                              <a href="#!" class="">
+                                <img src="assets/images/leads.png" width="25px" alt="Leads">
+                              </a>
+                              <a href="eventsTopMarketers.html" >
+                                <img src="assets/images/top.png" width="35px" alt="Top Marketers">
+                              </a>
                             </td>
                           </tr>
                           <tr>
@@ -464,15 +455,18 @@
                             <td>70</td>
                             <td>Offline</td>
                             <td>
-                              <button class="btn btn-warning btn-sm">
+                              <button class="btn m-0 btn-warning btn-sm">
                                 <i class="feather m-0 icon-edit"></i>
                               </button>
-                              <button class="btn btn-danger btn-sm">
+                              <button class="btn m-0 btn-danger btn-sm">
                                 <i class="feather m-0 icon-trash"></i>
                               </button>
-                              <button class="btn btn-info btn-sm">
-                                <i class="feather m-0 icon-bar-chart"></i>
-                              </button>
+                              <a href="#!" class="">
+                                <img src="assets/images/leads.png" width="25px" alt="Leads">
+                              </a>
+                              <a href="eventsTopMarketers.html" >
+                                <img src="assets/images/top.png" width="35px" alt="Top Marketers">
+                              </a>
                             </td>
                           </tr>
                           <tr>
@@ -485,7 +479,7 @@
                                 height="40px"
                               />
                             </td>
-                            <td>Turning Dreams into Reality</td>
+                            <td>aTurning Dreams into Reality</td>
                             <td>5 feb 2025 Thurs.</td>
                             <td>9.00 PM to 10.00 PM</td>
                             <td>Free</td>
@@ -493,15 +487,18 @@
                             <td>70</td>
                             <td>Offline</td>
                             <td>
-                              <button class="btn btn-warning btn-sm">
+                              <button class="btn m-0 btn-warning btn-sm">
                                 <i class="feather m-0 icon-edit"></i>
                               </button>
-                              <button class="btn btn-danger btn-sm">
+                              <button class="btn m-0 btn-danger btn-sm">
                                 <i class="feather m-0 icon-trash"></i>
                               </button>
-                              <button class="btn btn-info btn-sm">
-                                <i class="feather m-0 icon-bar-chart"></i>
-                              </button>
+                              <a href="#!" class="">
+                                <img src="assets/images/leads.png" width="25px" alt="Leads">
+                              </a>
+                              <a href="eventsTopMarketers.html" >
+                                <img src="assets/images/top.png" width="35px" alt="Top Marketers">
+                              </a>
                             </td>
                           </tr>
                         </tbody>
@@ -523,5 +520,12 @@
     <!-- datatable Js -->
     <script src="assets/plugins/data-tables/js/datatables.min.js"></script>
     <script src="assets/js/pages/data-basic-custom.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#simpletable").DataTable({
+          sort:false
+        });
+      });
+    </script>
   </body>
 </html>
