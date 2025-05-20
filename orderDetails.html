@@ -393,117 +393,108 @@
                     </table>
                   </div>
                 </div>
-                <!-- [ Smart-Wizard ] start -->
-                <div class="col-sm-12">
-                  <div class="card">
-                    <div class="card-header">
-                      <h5>Smart Wizard</h5>
-                    </div>
-                    <div class="card-body">
-                      <select id="theme_selector" class="form-control custom-select col-lg-6 col-sm-12 mb-3">
-                        <option value="default">default</option>
-                        <option value="dots">dots</option>
-                        <option value="arrows">arrows</option>
-                      </select>
-                      <!-- [ SmartWizard html ] start -->
-                      <div id="smartwizard">
-                        <ul class="d-flex justify-content-center align-items-center">
-                          <li class="flex-grow-1 text-center">
-                            <a href="#step-1">
-                              <h6>Step 1</h6>
-                              <p class="m-0">Processing</p>
-                            </a>
-                          </li>
-                          <li class="flex-grow-1 text-center">
-                            <a href="#step-2">
-                              <h6>Step 2</h6>
-                              <p class="m-0">Shipping</p>
-                            </a>
-                          </li>
-                          <li class="flex-grow-1 text-center">
-                            <a href="#step-3">
-                              <h6>Step 3</h6>
-                              <p class="m-0">Delivered</p>
-                            </a>
-                          </li>
-                          <li class="flex-grow-1 text-center">
-                            <a href="#step-4">
-                              <h6>Step 4</h6>
-                              <p class="m-0">Delivered</p>
-                            </a>
-                          </li>
-                        </ul>
-                        <div>
-                          <div id="step-1">
-                            <div class="text-center fw-bold fs-5">New Order</div>
-                            <div class="d-flex justify-content-center align-items-center my-3">
-                              <img src="assets/images/bg-images/1.jpg" alt="Processing"
-                                style="width: 300px; height: 300px;" />
-                            </div>
-                            <div class="d-flex justify-content-center gap-2 align-items-center">
-                              <button class="btn btn-danger">Reject</button>
-                              <button class="btn btn-primary">Accept</button>
-                            </div>
-                          </div>
-                          <div id="step-2">
-                            <div class="text-center fw-bold fs-5">In Progress...</div>
-                            <div class="d-flex justify-content-center align-items-center my-3">
-                              <img src="assets/images/bg-images/2.jpg" alt="Processing"
-                                style="width: 300px; height: 300px;" />
-                            </div>
-                            <div class="d-flex justify-content-between gap-2 align-items-center w-50 mx-auto">
-                              <div class="form-check">
-                                <input type="checkbox" class="form-check-input input-primary" id="customCheck1">
-                                <label class="form-check-label fw-bold fs-6" for="customCheck1">Paid</label>
-                              </div>
-                              <div>
-                                <label class="form-label" for="exampleFormControlSelect1">Payment Method</label>
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                  <option hidden>Select Method</option>
-                                  <option>InstaPay</option>
-                                  <option>Vodafone Cash</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="step-3">
-                            <div class="text-center fw-bold fs-5">Shipping...</div>
-                            <div class="d-flex justify-content-center align-items-center my-3">
-                              <img src="assets/images/bg-images/3.jpg" alt="Processing" />
-                            </div>
-                            <div class="d-flex justify-content-between gap-2 align-items-center w-50 mx-auto">
-                              <div class="form-check">
-                                <label class="form-label" for="exampleFormControlSelect2">Shipping Company</label>
-                                <select class="form-control" id="exampleFormControlSelect2">
-                                  <option hidden>Select Company</option>
-                                  <option>Bosta</option>
-                                  <option>Amazon</option>
-                                  <option>Aramix</option>
-                                  <option>Fedex</option>
-                                </select>
-                              </div>
-                              <div>
-                                <label for="demo-date-only" class="form-label">Date only</label>
-                                <input class="form-control" type="date" value="2021-12-31" id="demo-date-only">
-                              </div>
-                            </div>
-                          </div>
-                          <div id="step-4">
-                            <div class="text-center fw-bold fs-5">Delivered</div>
-                            <div class="d-flex justify-content-center align-items-center my-3">
-                              <img src="assets/images/bg-images/2.jpg" alt="Processing"
-                                style="width: 300px; height: 300px;" />
-                            </div>
-                            <div class="d-flex justify-content-center gap-2 align-items-center">
-                              <button class="btn btn-primary">Done</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- [ Smart-Wizard ] end -->
+<!-- [ Smart-Wizard ] start -->
+<div class="col-sm-12">
+  <div class="card">
+    <div class="card-header">
+      <h5>Order Status</h5>
+    </div>
+    <div class="card-body">
+      <!-- [ SmartWizard html ] start -->
+      <div id="smartwizard">
+        <ul class="d-flex justify-content-center align-items-center">
+          <li class="flex-grow-1 text-center">
+            <a href="#step-1">
+              <h6>Step 1</h6>
+              <p class="m-0">New Order</p>
+            </a>
+          </li>
+          <li class="flex-grow-1 text-center">
+            <a href="#step-2">
+              <h6>Step 2</h6>
+              <p class="m-0">In Progress</p>
+            </a>
+          </li>
+          <li class="flex-grow-1 text-center">
+            <a href="#step-3">
+              <h6>Step 3</h6>
+              <p class="m-0">Shipping</p>
+            </a>
+          </li>
+          <li class="flex-grow-1 text-center">
+            <a href="#step-4">
+              <h6>Step 4</h6>
+              <p class="m-0">Delivered</p>
+            </a>
+          </li>
+        </ul>
+        <div>
+          <div id="step-1">
+            <div class="text-center fw-bold fs-5">New Order</div>
+            <div class="d-flex justify-content-center align-items-center my-3">
+              <img src="assets/images/bg-images/1.jpg" alt="New Order" style="width: 300px; height: 300px;" />
+            </div>
+            <div class="d-flex justify-content-center gap-2 align-items-center">
+              <button class="btn btn-danger">Reject</button>
+              <button class="btn btn-primary">Accept</button>
+            </div>
+            <div class="d-flex justify-content-end">
+              <button id="to-progress" class="btn btn-primary">Move to In Progress</button>
+            </div>
+          </div>
+          <div id="step-2">
+            <div class="text-center fw-bold fs-5">In Progress</div>
+            <div class="d-flex justify-content-center align-items-center my-3">
+              <img src="assets/images/bg-images/2.jpg" alt="In Progress" style="width: 300px; height: 300px;" />
+            </div>
+            <div class="d-flex justify-content-end">
+              <button id="to-shipping" class="btn btn-primary status-btn">Move to Shipping</button>
+            </div>
+          </div>
+          <div id="step-3">
+            <div class="text-center fw-bold fs-5">Shipping</div>
+            <div class="d-flex justify-content-center align-items-center my-3">
+              <img src="assets/images/bg-images/3.jpg" alt="Shipping" style="width: 300px; height: 300px;" />
+            </div>
+            <div class="d-flex justify-content-between gap-2 align-items-center w-50 mx-auto mb-3">
+              <div>
+                <label class="form-label" for="shippingCompany">Shipping Company</label>
+                <select class="form-control" id="shippingCompany">
+                  <option hidden>Select Company</option>
+                  <option>Bosta</option>
+                  <option>Amazon</option>
+                  <option>Aramix</option>
+                  <option>Fedex</option>
+                </select>
+              </div>
+              <div>
+                <label for="shippingDate" class="form-label">Expected Delivery</label>
+                <input class="form-control" type="date" id="shippingDate">
+              </div>
+            </div>
+            <div class="d-flex justify-content-end">
+              <button id="to-delivered" class="btn btn-primary status-btn">Move to Delivered</button>
+            </div>
+          </div>
+          <div id="step-4">
+            <div class="text-center fw-bold fs-5">Delivered</div>
+            <div class="d-flex justify-content-center align-items-center my-3">
+              <img src="assets/images/bg-images/2.jpg" alt="Delivered" style="width: 300px; height: 300px;" />
+            </div>
+            <div class="d-flex justify-content-center gap-2 align-items-center">
+              <div class="badge bg-success p-2 mb-3">Successfully Delivered</div>
+            </div>
+            <div class="d-flex justify-content-end">
+              <button id="order-complete" class="btn btn-success status-btn">Done</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- [ SmartWizard html ] end -->
+    </div>
+  </div>
+</div>
+<!-- [ Smart-Wizard ] end -->
               </div>
             </div>
           </div>
@@ -532,6 +523,39 @@
   <!-- Smart Wizard Js -->
   <script src="assets/plugins/smart-wizard/js/jquery.smartWizard.min.js"></script>
   <script src="assets/js/pages/wizard-custom.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    $('#smartwizard').smartWizard({
+      theme: 'arrows',
+      transitionEffect: 'fade',
+      showStepURLhash: false,
+      toolbarSettings: {
+        toolbarPosition: 'none'
+      }
+    });
+
+    $("#smartwizard ul.step-anchor li a").on("click", function(e) {
+      e.preventDefault();
+      return false;
+    });
+
+    $("#to-progress").on("click", function() {
+      $('#smartwizard').smartWizard("next");
+    });
+
+    $("#to-shipping").on("click", function() {
+      $('#smartwizard').smartWizard("next");
+    });
+
+    $("#to-delivered").on("click", function() {
+      $('#smartwizard').smartWizard("next");
+    });
+
+    $("#order-complete").on("click", function() {
+      alert("Order has been completed successfully!");
+    });
+  });
+</script>
 </body>
 
 </html>
